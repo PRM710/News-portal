@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    host: '0.0.0.0',      // Bind to all available network interfaces
-    port: process.env.PORT || 3000,  // Use the port provided by Render or default to 3000
-  },
   build: {
-    outDir: 'dist',       // Output directory for build files
+    outDir: 'dist', // Ensure this matches your netlify.toml configuration
+  },
+  server: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 3000,
   },
 });
