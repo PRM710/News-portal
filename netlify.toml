@@ -1,3 +1,7 @@
 [build]
   command = "npm run build"  # Command to build your project
-  publish = "dist"         
+  publish = "dist"            # Directory where built files will be located
+
+[dev]
+  command = "npm run dev"     # Command to run your development server
+  port = 3000                 # Default port for the development server
