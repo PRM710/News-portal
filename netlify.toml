@@ -4,4 +4,4 @@
 
 [dev]
   command = "npm run dev"     # Command to run your development server
-  port = 3000                 # Default port for the development server
+  port = 3000  
